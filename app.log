@@ -1,0 +1,263 @@
+2019-02-25 09:32:57,111 - ERROR - flask-log.py - index - 37 - list index out of range
+Traceback (most recent call last):
+  File "C:/Users/Administrator/Desktop/Flask-log日志/flask-log.py", line 34, in index
+    i = no_thing[0]
+IndexError: list index out of range
+2019-02-25 09:34:27,306 - ERROR - flask-log.py - index - 36 - list index out of range
+Traceback (most recent call last):
+  File "C:/Users/Administrator/Desktop/Flask-log日志/flask-log.py", line 34, in index
+    i = no_thing[0]
+IndexError: list index out of range
+2019-02-25 09:35:04,280 - ERROR - flask-log.py - index - 36 - list index out of range
+Traceback (most recent call last):
+  File "C:/Users/Administrator/Desktop/Flask-log日志/flask-log.py", line 34, in index
+    i = no_thing[0]
+IndexError: list index out of range
+2019-02-25 09:39:40,031 - ERROR - flask-log.py - test_02 - 45 - list index out of range
+Traceback (most recent call last):
+  File "C:/Users/Administrator/Desktop/Flask-log日志/flask-log.py", line 43, in test_02
+    print(a[3])
+IndexError: list index out of range
+2019-02-25 13:59:33,944 - ERROR - flask-log.py - index - 45 - list index out of range
+Traceback (most recent call last):
+  File "C:/Users/Administrator/Desktop/Flask-log日志/flask-log.py", line 43, in index
+    i = no_thing[0]
+IndexError: list index out of range
+2019-02-26 16:29:34,024 - ERROR - flask-log.py - index - 45 - list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\Flask-log日志\flask-log.py", line 43, in index
+    i = no_thing[0]
+IndexError: list index out of range
+2019-02-26 17:45:27,371 - ERROR - flask-log.py - index - 45 - list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\Flask-log日志\flask-log.py", line 43, in index
+    i = no_thing[0]
+IndexError: list index out of range
+2019-02-27 16:33:43,285 - ERROR - flask-log.py - index - 45 - list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\Flask-log日志\flask-log.py", line 43, in index
+    i = no_thing[0]
+IndexError: list index out of range
+2019-02-27 16:39:22,624 - ERROR - flask-log.py - index - 45 - list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\Flask-log日志\flask-log.py", line 43, in index
+    i = no_thing[0]
+IndexError: list index out of range
+2019-02-27 17:07:30,535 - ERROR - app.py - log_exception - 1761 - Exception on /test-03 [GET]
+Traceback (most recent call last):
+  File "D:\python3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\python3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\python3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\python3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\python3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\python3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\Desktop\Flask-log日志\flask-log.py", line 65, in test_03
+    return render_template("test-03.html",lis=lis,name="hello wprld",)
+  File "D:\python3\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "D:\python3\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "D:\python3\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "D:\python3\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "D:\python3\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\python3\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Administrator\Desktop\Flask-log日志\templates\test-03.html", line 11, in top-level template code
+    {% if yushu > 0 %}
+jinja2.exceptions.UndefinedError: 'yushu' is undefined
+2019-02-27 17:07:33,148 - ERROR - app.py - log_exception - 1761 - Exception on /test-03 [GET]
+Traceback (most recent call last):
+  File "D:\python3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\python3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\python3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\python3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\python3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\python3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\Desktop\Flask-log日志\flask-log.py", line 65, in test_03
+    return render_template("test-03.html",lis=lis,name="hello wprld",)
+  File "D:\python3\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "D:\python3\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "D:\python3\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "D:\python3\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "D:\python3\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\python3\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Administrator\Desktop\Flask-log日志\templates\test-03.html", line 11, in top-level template code
+    {% if yushu > 0 %}
+jinja2.exceptions.UndefinedError: 'yushu' is undefined
+2019-02-27 17:07:33,829 - ERROR - app.py - log_exception - 1761 - Exception on /test-03 [GET]
+Traceback (most recent call last):
+  File "D:\python3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\python3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\python3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\python3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\python3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\python3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\Desktop\Flask-log日志\flask-log.py", line 65, in test_03
+    return render_template("test-03.html",lis=lis,name="hello wprld",)
+  File "D:\python3\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "D:\python3\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "D:\python3\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "D:\python3\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "D:\python3\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\python3\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Administrator\Desktop\Flask-log日志\templates\test-03.html", line 11, in top-level template code
+    {% if yushu > 0 %}
+jinja2.exceptions.UndefinedError: 'yushu' is undefined
+2019-02-27 17:07:34,292 - ERROR - app.py - log_exception - 1761 - Exception on /test-03 [GET]
+Traceback (most recent call last):
+  File "D:\python3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\python3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\python3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\python3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\python3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\python3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\Desktop\Flask-log日志\flask-log.py", line 65, in test_03
+    return render_template("test-03.html",lis=lis,name="hello wprld",)
+  File "D:\python3\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "D:\python3\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "D:\python3\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "D:\python3\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "D:\python3\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\python3\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Administrator\Desktop\Flask-log日志\templates\test-03.html", line 11, in top-level template code
+    {% if yushu > 0 %}
+jinja2.exceptions.UndefinedError: 'yushu' is undefined
+2019-02-27 17:07:34,676 - ERROR - app.py - log_exception - 1761 - Exception on /test-03 [GET]
+Traceback (most recent call last):
+  File "D:\python3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\python3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\python3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\python3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\python3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\python3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\Desktop\Flask-log日志\flask-log.py", line 65, in test_03
+    return render_template("test-03.html",lis=lis,name="hello wprld",)
+  File "D:\python3\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "D:\python3\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "D:\python3\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "D:\python3\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "D:\python3\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\python3\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Administrator\Desktop\Flask-log日志\templates\test-03.html", line 11, in top-level template code
+    {% if yushu > 0 %}
+jinja2.exceptions.UndefinedError: 'yushu' is undefined
+2019-02-28 08:33:13,401 - ERROR - app.py - log_exception - 1761 - Exception on /test-05 [GET]
+Traceback (most recent call last):
+  File "D:\python3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\python3\lib\site-packages\flask\app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\python3\lib\site-packages\flask\app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "D:\python3\lib\site-packages\flask\app.py", line 1957, in make_response
+    'The view function did not return a valid response. The'
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2019-02-28 10:24:23,997 - ERROR - app.py - log_exception - 1761 - Exception on /test-05 [GET]
+Traceback (most recent call last):
+  File "D:\python3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\python3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\python3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\python3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\python3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\python3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\Desktop\Flask-log日志\flask-log.py", line 88, in test_05
+    if request.args.get("state") == 1:
+UnboundLocalError: local variable 'request' referenced before assignment
+2019-02-28 10:25:00,939 - ERROR - app.py - log_exception - 1761 - Exception on /test-05 [GET]
+Traceback (most recent call last):
+  File "D:\python3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\python3\lib\site-packages\flask\app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\python3\lib\site-packages\flask\app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "D:\python3\lib\site-packages\flask\app.py", line 1957, in make_response
+    'The view function did not return a valid response. The'
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2019-02-28 10:38:02,332 - ERROR - app.py - log_exception - 1761 - Exception on /test-05 [GET]
+Traceback (most recent call last):
+  File "D:\python3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\python3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\python3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\python3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\python3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\python3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\Desktop\Flask-log日志\flask-log.py", line 114, in test_05
+    message_body = queue.receive_message().message_body
+  File "D:\python3\lib\site-packages\mns\queue.py", line 230, in receive_message
+    self.mns_client.receive_message(req, resp)
+  File "D:\python3\lib\site-packages\mns\mns_client.py", line 285, in receive_message
+    self.check_status(req_inter, resp_inter, resp)
+  File "D:\python3\lib\site-packages\mns\mns_client.py", line 759, in check_status
+    raise MNSServerException(excType, excMessage, reqId, hostId, subErr)
+mns.mns_exception.MNSServerException: MNSServerException  ("MessageNotExist" "Message not exist.") RequestID:5C77492A3FCB6ACE7BFD86B4
+

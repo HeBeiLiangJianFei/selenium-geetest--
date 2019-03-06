@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../static/jquery-1.11.3.js"></script>
+</head>
+<body>
+
+    <div id="screen" style="background-color: greenyellow">
+        <div>第一条数据</div>
+        <div>第二条数据</div>
+        <div>第三条数据</div>
+    </div>
+
+    {% for i in lis %}
+        {% if i.li >0  %}
+            <a class="cick" style="background-color: #009cf9;width: 30px;color: white" data-id="{{i.li}}">{{i.li}}</a>
+        {% endif %}
+    {% endfor %}
+    <script>
+        $(".cick").click(function () {
+            var l = $(this).attr('data-id');
+            var name = "hello world ";
+            console.log(l);
+            document.write("<form action=test-03-server method=post name=form1 style='display:none'>");
+            document.write("<input type=hidden name=name value='"+l+"'/>");
+            document.write("</form>");
+            document.form1.submit();
+        })
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            function getMes() {
+                $.get('test-03-ajax',function (xml) {
+                    var data = xml.message;
+                    var textdata = "<div>"+data+"</div>";
+                    $(textdata).prependTo("#screen");
+                },'json')
+            }
+            setInterval(getMes,10000);
+        })
+
+    </script>
+</body>
+</html>
